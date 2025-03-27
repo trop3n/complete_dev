@@ -1,0 +1,11 @@
+{
+  "name": "complete_dev",
+  "version": "1.0.0",
+  "description": "walkthrough of the book The Complete Developer: Full Stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "author": "trop3n",
+  "license": "ISC"
+}
