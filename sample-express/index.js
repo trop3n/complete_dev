@@ -1,5 +1,7 @@
 import { routeHello, routeAPINames } from "./routes.js";
 import express from "express";
+
+const server = express();
 const port = 3000;
 
 server.get("/hello", function (req, res) {
