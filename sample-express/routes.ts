@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 
 const routeHello = () => "Hello World!";
 
-const routeAPINames = async () => {
+const routeAPINames = async (): Promise<string> => {
     const url = "https://www.usemodernfullstack.dev/api/v1/users";
     let data: responseItemType[];
     try {
@@ -17,7 +17,8 @@ const routeAPINames = async () => {
     return names;
 };
 
-const routeWeather = (query: WeatherQueryInterface): WeatherDetailType => queryWeatherData(query);
+const routeWeather = (query: WeatherQueryInterface): WeatherDetailType => 
+    queryWeatherData(query);
 const queryWeatherData = (query: WeatherQueryInterface): WeatherDetailType => {
     return {
         zipcode: query.zipcode,

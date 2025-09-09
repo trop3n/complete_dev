@@ -7,3 +7,4 @@ type WeatherDetailType = {
     zipcode: string;
     temp?: number;
 };
+
